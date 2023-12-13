@@ -5,8 +5,8 @@ vim.keymap.set("n", "<leader>o", vim.cmd.Ex)
 vim.keymap.set("i", "jk", "<Esc>")
 
 -- crazy move while selected
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+--vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+--vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- keep cursor in place with J 
 vim.keymap.set("n", "J", "mzJ`z")
@@ -21,10 +21,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 -- SYSTEM CLIPBOARD
+--vim.keymap.set("n", "yy", "\"+yy")
 vim.keymap.set("n", "y", "\"+y")
-vim.keymap.set("n", "p", "\"*p")
-
-
+vim.keymap.set("n", "p", "\"+p")
 -- mason
 vim.keymap.set("n", "<leader>pm", ":Mason<CR>")
 

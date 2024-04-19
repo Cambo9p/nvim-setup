@@ -3,6 +3,9 @@ vim.keymap.set("n", "<leader>o", vim.cmd.Ex)
 
 -- the holy jk
 vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("i", "ne", "<Esc>")
+-- remap arrows to esc while i figure out miryoku
+vim.keymap.set("i", "<Down><Up>", "<Esc>")
 
 -- crazy move while selected
 --vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -35,6 +38,7 @@ vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>")
 --vim.keymap.set("n", "<leader>/", "m`I//<Esc>``")
 --vim.keymap.set("v", "<leader>/", ":s/^///<CR>")
 
+
 function ToggleComment()
     local save_cursor = vim.fn.getpos('.')
     vim.cmd('normal! ^')
@@ -49,4 +53,5 @@ function ToggleComment()
 end
 
 vim.api.nvim_set_keymap('n', '<leader>/', ':lua ToggleComment()<CR>', { noremap = true, silent = true })
+
 

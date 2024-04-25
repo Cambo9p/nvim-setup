@@ -21,13 +21,17 @@ return require('packer').startup(function(use)
   })
 
   use ( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+
   use ('theprimeagen/harpoon')
+
   use ('mbbill/undotree')
+
   use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
+
   use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v3.x',
@@ -54,7 +58,16 @@ return require('packer').startup(function(use)
         },
     })
 
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
     -- own plugins
     use "~/proj/productivitytimer.nvim"
+
 
 end)

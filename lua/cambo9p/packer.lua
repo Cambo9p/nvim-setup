@@ -66,8 +66,11 @@ return require('packer').startup(function(use)
         end
     }
 
+    use "xiyaowong/transparent.nvim"
+
     -- own plugins
     use "~/proj/productivitytimer.nvim"
+
 
 
 end)

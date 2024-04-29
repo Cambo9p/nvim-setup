@@ -3,7 +3,7 @@ vim.keymap.set("n", "<leader>o", vim.cmd.Ex)
 
 -- the holy jk
 vim.keymap.set("i", "jk", "<Esc>")
-vim.keymap.set("i", "ne", "<Esc>")
+-- vim.keymap.set("i", "ne", "<Esc>")
 -- remap arrows to esc while i figure out miryoku
 vim.keymap.set("i", "<Down><Up>", "<Esc>")
 

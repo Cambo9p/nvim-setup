@@ -15,8 +15,8 @@ vim.keymap.set("i", "<Down><Up>", "<Esc>")
 vim.keymap.set("n", "J", "mzJ`z")
 
 -- keep cursor in middle 
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zvzz")
+vim.keymap.set("n", "<C-u>", "<C-u>zvzz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 

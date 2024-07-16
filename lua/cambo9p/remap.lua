@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>o", vim.cmd.Ex)
 
 -- the holy jk
-vim.keymap.set("i", "jk", "<Esc>")
+--vim.keymap.set("i", "jk", "<Esc>")
 -- vim.keymap.set("i", "ne", "<Esc>")
 -- remap arrows to esc while i figure out miryoku
 vim.keymap.set("i", "<Down><Up>", "<Esc>")
@@ -33,6 +33,9 @@ vim.keymap.set("n", "<leader>pm", ":Mason<CR>")
 
 -- lazygit 
 vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>")
+
+-- easy save with corne
+vim.keymap.set("n", "<leader>w", ":w<CR>")
 
 -- auto comment
 --vim.keymap.set("n", "<leader>/", "m`I//<Esc>``")

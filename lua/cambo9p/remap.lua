@@ -36,11 +36,18 @@ vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>")
 
 -- easy save with corne
 vim.keymap.set("n", "<leader>w", ":w<CR>")
+vim.keymap.set("n", "<leader>q", ":wq<CR>")
 
 -- auto comment
 --vim.keymap.set("n", "<leader>/", "m`I//<Esc>``")
 --vim.keymap.set("v", "<leader>/", ":s/^///<CR>")
 
+-- quickfix list
+
+vim.keymap.set("n", "<leader>cn", ":cnext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>cp", ":cprev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>cc", ":cclose<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>co", ":copen<CR>", { noremap = true, silent = true })
 
 function ToggleComment()
     local save_cursor = vim.fn.getpos('.')

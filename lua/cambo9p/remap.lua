@@ -49,6 +49,25 @@ vim.keymap.set("n", "<leader>cp", ":cprev<CR>", { noremap = true, silent = true 
 vim.keymap.set("n", "<leader>cc", ":cclose<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>co", ":copen<CR>", { noremap = true, silent = true })
 
+-- navigating splits 
+vim.keymap.set("n", "<C-up>", "<C-w><up>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-left>", "<C-w><left>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-down>", "<C-w><down>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-right>", "<C-w><right>", { noremap = true, silent = true })
+
+
+vim.keymap.set("n", "<M-.>", "<C-w>5<", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-,>", "<C-w>5>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-k>", "<C-w>+>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-h>", "<C-w>->", { noremap = true, silent = true })
+
+
+
+
+-- tj's stuff
+
+
+
 function ToggleComment()
     local save_cursor = vim.fn.getpos('.')
     vim.cmd('normal! ^')

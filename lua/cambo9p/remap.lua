@@ -56,8 +56,8 @@ vim.keymap.set("n", "<C-down>", "<C-w><down>", { noremap = true, silent = true }
 vim.keymap.set("n", "<C-right>", "<C-w><right>", { noremap = true, silent = true })
 
 
-vim.keymap.set("n", "<M-.>", "<C-w>5<", { noremap = true, silent = true })
-vim.keymap.set("n", "<M-,>", "<C-w>5>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-,>", "<C-w>5<", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-.>", "<C-w>5>", { noremap = true, silent = true })
 vim.keymap.set("n", "<M-k>", "<C-w>+>", { noremap = true, silent = true })
 vim.keymap.set("n", "<M-h>", "<C-w>->", { noremap = true, silent = true })
 

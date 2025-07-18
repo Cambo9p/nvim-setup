@@ -43,9 +43,8 @@ vim.keymap.set("n", "<leader>q", ":wq<CR>")
 --vim.keymap.set("v", "<leader>/", ":s/^///<CR>")
 
 -- quickfix list
-
-vim.keymap.set("n", "<leader>cn", ":cnext<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>cp", ":cprev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>tn", ":cnext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>te", ":cprev<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>cc", ":cclose<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>co", ":copen<CR>", { noremap = true, silent = true })
 

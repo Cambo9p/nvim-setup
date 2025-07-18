@@ -78,6 +78,9 @@ return require('packer').startup(function(use)
         end
     })
 
+    use({"lewis6991/gitsigns.nvim"})
+    use "lukas-reineke/indent-blankline.nvim"
+
     -- own plugins
     use "~/proj/productivitytimer.nvim"
 
